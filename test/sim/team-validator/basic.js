@@ -151,10 +151,9 @@ describe('Team Validator', () => {
 	});
 
 	it('should validate Sketch', () => {
-		// Spore is a Gen 5 event move
 		// Sketch itself should still be valid
 		const team = [
-			{ species: 'smeargle', ability: 'owntempo', moves: ['bellydrum', 'spore', 'sketch'], evs: { hp: 1 } },
+			{ species: 'smeargle', ability: 'owntempo', moves: ['bellydrum', 'sketch'], evs: { hp: 1 } },
 		];
 		assert.legalTeam(team, 'gen4ou');
 	});
